@@ -1,8 +1,18 @@
 aid: pokelabo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pokelabo.png
 name: Pokelabo
-description: 'Pokelabo is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Pokelabo (ポケラボ) is a Japanese mobile game development studio founded in 2007 and headquartered in Tokyo. Originally an independent social-game maker, it became a subsidiary of GREE and, as of January 1, 2025, was integrated into WFS (Wright Flyer Studios) under the GREE group. The studio develops and operates smartphone games built on licensed and original intellectual properties, including titles such as SINoALICE and Magia Exedra (Puella Magi Madoka Magica). Pokelabo is a consumer entertainment company and does not expose a public developer API; this profile captures its identity and domain-security posture for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/pokelabo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +22,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Gaming
+- Mobile Games
+- Video Games
+- Entertainment
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +38,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pokelabo-domain-security.yml
 - type: Website
-  url: http://pokelabo.co.jp/
+  url: https://pokelabo.co.jp/
+- type: Blog
+  url: https://note.com/pokelabo
+- type: Support
+  url: https://help.wfs.games/other_input
+- type: PrivacyPolicy
+  url: https://www.wfs.games/privacypolicy.html
+- type: TermsOfService
+  url: https://pokelabo.co.jp/site-policy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
